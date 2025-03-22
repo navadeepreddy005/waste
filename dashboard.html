@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Admin Dashboard</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="schedule.html">Schedule Pickup</a></li>
+                <li><a href="index.html">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="dashboard-overview">
+            <div class="stat-box">
+                <h3>Total Users</h3>
+                <p id="total-users">0</p>
+            </div>
+            <div class="stat-box">
+                <h3>Upcoming Pickups</h3>
+                <p id="upcoming-pickups">0</p>
+            </div>
+            <div class="stat-box">
+                <h3>Pending Requests</h3>
+                <p id="pending-requests">0</p>
+            </div>
+            <div class="stat-box">
+                <h3>Completed Pickups</h3>
+                <p id="completed-pickups">0</p>
+            </div>
+        </section>
+
+        <section class="recent-activities">
+            <h2>Recent Activities</h2>
+            <ul>
+                <li><span class="activity-date">2025-03-20</span> | <span class="activity-description">User John Doe scheduled a pickup</span></li>
+                <li><span class="activity-date">2025-03-19</span> | <span class="activity-description">Admin generated a report for March</span></li>
+                <li><span class="activity-date">2025-03-18</span> | <span class="activity-description">Pickup request completed for User Jane Smith</span></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Waste Collection Service. All rights reserved.</p>
+    </footer>
+</body>
+</html>

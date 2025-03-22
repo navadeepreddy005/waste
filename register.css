@@ -1,0 +1,180 @@
+/* Global reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Body Styling */
+body {
+    background-color: #f7f7f7;
+    color: #333;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height to prevent scrolling */
+    margin: 0;
+    padding-top: 0; /* Remove padding from top */
+}
+
+/* Header (Logo) */
+header {
+    width: 100%;
+    text-align: left;
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #28a745;
+    z-index: 1000;
+}
+
+header .logo-img {
+    width: 50px;
+    height: auto;
+    vertical-align: middle;
+}
+
+/* Navigation Bar Styling */
+nav {
+    width: 100%;
+    background-color: #28a745;
+    padding: 15px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+/* Hover effect for nav links */
+nav ul li a:hover {
+    color: #f7f7f7;
+}
+
+/* Main Registration Section */
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: calc(100vh - 130px); /* Full viewport height minus nav and header */
+}
+
+/* Registration Box */
+.register-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.register-box {
+    background-color: white;
+    padding: 40px 60px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    margin-top: 0;
+}
+
+.register-box h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+    font-weight: 600;
+}
+
+/* Form Fields */
+.form-field {
+    margin-bottom: 20px;
+}
+
+.form-field label {
+    display: block;
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 8px;
+}
+
+.form-field input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    outline: none;
+    background-color: #f9f9f9;
+    transition: border-color 0.3s, background-color 0.3s;
+}
+
+.form-field input:focus {
+    border-color: #28a745;
+    background-color: #fff;
+}
+
+.form-field input::placeholder {
+    color: #999;
+}
+
+/* Submit Button Styling */
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #28a745;
+    color: white;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+    background-color: #218838;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #28a745;
+    color: white;
+    width: 100%;
+    font-size: 0.9rem;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .register-box {
+        padding: 30px 40px;
+        max-width: 90%;
+    }
+    .form-field input {
+        padding: 10px;
+    }
+}

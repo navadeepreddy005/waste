@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="admin.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Admin Panel</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="index.html">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Admin Control Section -->
+        <section class="admin-controls">
+            <h2>Manage Waste Collection</h2>
+            <button onclick="viewUsers()">View Users</button>
+            <button onclick="viewSchedules()">View Schedules</button>
+            <button onclick="generateReports()">Generate Reports</button>
+            <button onclick="sendNotifications()">Send Notifications</button>
+            <button onclick="editSchedules()">Edit Schedules</button>
+            <button onclick="viewAnalytics()">View Analytics</button>
+        </section>
+
+        <!-- Admin Dashboard Overview -->
+        <section class="admin-dashboard">
+            <h2>Admin Dashboard Overview</h2>
+            <p>Total Users: <span id="total-users">0</span></p>
+            <p>Upcoming Pickups: <span id="upcoming-pickups">0</span></p>
+            <p>Pending Requests: <span id="pending-requests">0</span></p>
+            <p>Completed Pickups: <span id="completed-pickups">0</span></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Waste Collection Service. All rights reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,123 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #2e8b57; /* Dark Green */
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5rem;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #c6e1d4; /* Light Green */
+}
+
+/* Main Section */
+main {
+    padding: 2rem 1rem;
+}
+
+.dashboard-overview {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.stat-box {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    text-align: center;
+    color: #2e8b57; /* Dark Green */
+}
+
+.stat-box h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.stat-box p {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.recent-activities {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+}
+
+.recent-activities h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    color: #2e8b57; /* Dark Green */
+}
+
+.recent-activities ul {
+    list-style-type: none;
+}
+
+.recent-activities ul li {
+    border-bottom: 1px solid #ccc;
+    padding: 0.8rem 0;
+    font-size: 1.1rem;
+}
+
+.activity-date {
+    font-weight: bold;
+    color: #2e8b57;
+}
+
+.activity-description {
+    color: #555;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #2e8b57;
+    color: white;
+    margin-top: 2rem;
+}
+
+footer p {
+    font-size: 1rem;
+}
